@@ -46,5 +46,12 @@ class SecondViewController: UIViewController {
     
     @IBAction func openTheCameraAction(_ sender: Any) {
         print("openTheCamera -> Action")
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: "TensorFlowController") as! ObjectDetectionViewController
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+//        UIApplication.shared.keyWindow?.visibleViewController()?.navigationController?.pushViewController(nextViewController, animated: true)
+        
     }
 }

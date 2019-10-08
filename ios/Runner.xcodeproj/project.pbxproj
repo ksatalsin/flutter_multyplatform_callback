@@ -11,6 +11,20 @@
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46488E7D234D07C700A5276B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E69234D07C700A5276B /* UIColorExtension.swift */; };
+		46488E7E234D07C700A5276B /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E6A234D07C700A5276B /* CVPixelBufferExtension.swift */; };
+		46488E7F234D07C700A5276B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E6B234D07C700A5276B /* StringExtension.swift */; };
+		46488E80234D07C700A5276B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 46488E6D234D07C700A5276B /* .gitignore */; };
+		46488E81234D07C700A5276B /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46488E6E234D07C700A5276B /* labelmap.txt */; };
+		46488E82234D07C700A5276B /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 46488E6F234D07C700A5276B /* detect.tflite */; };
+		46488E83234D07C700A5276B /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E71234D07C700A5276B /* ModelDataHandler.swift */; };
+		46488E84234D07C700A5276B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E73234D07C700A5276B /* PreviewView.swift */; };
+		46488E85234D07C700A5276B /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E74234D07C700A5276B /* CameraFeedManager.swift */; };
+		46488E86234D07C700A5276B /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E76234D07C700A5276B /* InfoCell.swift */; };
+		46488E87234D07C700A5276B /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E78234D07C700A5276B /* OverlayView.swift */; };
+		46488E88234D07C700A5276B /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E79234D07C700A5276B /* CurvedView.swift */; };
+		46488E89234D07C700A5276B /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E7B234D07C700A5276B /* ObjectDetectionViewController.swift */; };
+		46488E8A234D07C700A5276B /* InferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46488E7C234D07C700A5276B /* InferenceViewController.swift */; };
 		61BD8F84210F55F600F876E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BD8F82210F55F600F876E7 /* SecondViewController.swift */; };
 		61BD8F85210F55F600F876E7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61BD8F83210F55F600F876E7 /* SecondViewController.xib */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
@@ -21,6 +35,7 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		A2B5094957BC6F73E70A2E5C /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD7DF5816CE2190F04BC675 /* libPods-Runner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,11 +58,26 @@
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+		46488E69234D07C700A5276B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		46488E6A234D07C700A5276B /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		46488E6B234D07C700A5276B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		46488E6D234D07C700A5276B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		46488E6E234D07C700A5276B /* labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
+		46488E6F234D07C700A5276B /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
+		46488E71234D07C700A5276B /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		46488E73234D07C700A5276B /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		46488E74234D07C700A5276B /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		46488E76234D07C700A5276B /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		46488E78234D07C700A5276B /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		46488E79234D07C700A5276B /* CurvedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedView.swift; sourceTree = "<group>"; };
+		46488E7B234D07C700A5276B /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
+		46488E7C234D07C700A5276B /* InferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InferenceViewController.swift; sourceTree = "<group>"; };
 		61BD8F82210F55F600F876E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		61BD8F83210F55F600F876E7 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		8B21E7CEA445D429416C25AD /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		9740EEBA1CF902C7004384FC /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = Flutter/Flutter.framework; sourceTree = "<group>"; };
@@ -56,6 +86,8 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A266A49018F3B621A79D0248 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		EFD7DF5816CE2190F04BC675 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +97,107 @@
 			files = (
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
+				A2B5094957BC6F73E70A2E5C /* libPods-Runner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DB135D7EB14BE120C46ED48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B21E7CEA445D429416C25AD /* Pods-Runner.debug.xcconfig */,
+				A266A49018F3B621A79D0248 /* Pods-Runner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F545B5C09190DC78D4F6EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7DF5816CE2190F04BC675 /* libPods-Runner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46488E67234D065F00A5276B /* TensorFlow */ = {
+			isa = PBXGroup;
+			children = (
+				46488E72234D07C700A5276B /* Camera Feed */,
+				46488E75234D07C700A5276B /* Cells */,
+				46488E68234D07C700A5276B /* Extensions */,
+				46488E6C234D07C700A5276B /* Model */,
+				46488E70234D07C700A5276B /* ModelDataHandler */,
+				46488E7A234D07C700A5276B /* ViewControllers */,
+				46488E77234D07C700A5276B /* Views */,
+			);
+			path = TensorFlow;
+			sourceTree = "<group>";
+		};
+		46488E68234D07C700A5276B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46488E69234D07C700A5276B /* UIColorExtension.swift */,
+				46488E6A234D07C700A5276B /* CVPixelBufferExtension.swift */,
+				46488E6B234D07C700A5276B /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46488E6C234D07C700A5276B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46488E6D234D07C700A5276B /* .gitignore */,
+				46488E6E234D07C700A5276B /* labelmap.txt */,
+				46488E6F234D07C700A5276B /* detect.tflite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46488E70234D07C700A5276B /* ModelDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				46488E71234D07C700A5276B /* ModelDataHandler.swift */,
+			);
+			path = ModelDataHandler;
+			sourceTree = "<group>";
+		};
+		46488E72234D07C700A5276B /* Camera Feed */ = {
+			isa = PBXGroup;
+			children = (
+				46488E73234D07C700A5276B /* PreviewView.swift */,
+				46488E74234D07C700A5276B /* CameraFeedManager.swift */,
+			);
+			path = "Camera Feed";
+			sourceTree = "<group>";
+		};
+		46488E75234D07C700A5276B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				46488E76234D07C700A5276B /* InfoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		46488E77234D07C700A5276B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46488E78234D07C700A5276B /* OverlayView.swift */,
+				46488E79234D07C700A5276B /* CurvedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46488E7A234D07C700A5276B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46488E7B234D07C700A5276B /* ObjectDetectionViewController.swift */,
+				46488E7C234D07C700A5276B /* InferenceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +217,8 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
+				2DB135D7EB14BE120C46ED48 /* Pods */,
+				2F545B5C09190DC78D4F6EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +233,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				46488E67234D065F00A5276B /* TensorFlow */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -133,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				F532AF10D830E81EDA11B3C3 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
@@ -189,8 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46488E80234D07C700A5276B /* .gitignore in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				9740EEB51CF90195004384FC /* Generated.xcconfig in Resources */,
+				46488E81234D07C700A5276B /* labelmap.txt in Resources */,
+				46488E82234D07C700A5276B /* detect.tflite in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
 				61BD8F85210F55F600F876E7 /* SecondViewController.xib in Resources */,
@@ -214,7 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" thin";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" thin\n";
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -230,6 +364,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
 		};
+		F532AF10D830E81EDA11B3C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,9 +393,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46488E8A234D07C700A5276B /* InferenceViewController.swift in Sources */,
+				46488E7E234D07C700A5276B /* CVPixelBufferExtension.swift in Sources */,
+				46488E84234D07C700A5276B /* PreviewView.swift in Sources */,
 				61BD8F84210F55F600F876E7 /* SecondViewController.swift in Sources */,
+				46488E7F234D07C700A5276B /* StringExtension.swift in Sources */,
+				46488E87234D07C700A5276B /* OverlayView.swift in Sources */,
+				46488E83234D07C700A5276B /* ModelDataHandler.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				46488E88234D07C700A5276B /* CurvedView.swift in Sources */,
+				46488E89234D07C700A5276B /* ObjectDetectionViewController.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				46488E85234D07C700A5276B /* CameraFeedManager.swift in Sources */,
+				46488E7D234D07C700A5276B /* UIColorExtension.swift in Sources */,
+				46488E86234D07C700A5276B /* InfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +434,6 @@
 /* Begin XCBuildConfiguration section */
 		97C147031CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -311,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +487,6 @@
 		};
 		97C147041CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -359,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -370,13 +535,18 @@
 		};
 		97C147061CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			baseConfigurationReference = 8B21E7CEA445D429416C25AD /* Pods-Runner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WECK8KGTTF;
 				ENABLE_BITCODE = NO;
+				FLUTTER_APPLICATION_PATH = /Users/mbeloded/Documents/workspace/flutter_multyplatform_callback;
+				FLUTTER_BUILD_DIR = build;
+				FLUTTER_FRAMEWORK_DIR = /Users/mbeloded/Documents/workspace/flutter/bin/cache/artifacts/engine/ios;
+				FLUTTER_ROOT = /Users/mbeloded/Documents/workspace/flutter;
+				FLUTTER_TARGET = lib/main.dart;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -399,13 +569,18 @@
 		};
 		97C147071CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			baseConfigurationReference = A266A49018F3B621A79D0248 /* Pods-Runner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WECK8KGTTF;
 				ENABLE_BITCODE = NO;
+				FLUTTER_APPLICATION_PATH = /Users/mbeloded/Documents/workspace/flutter_multyplatform_callback;
+				FLUTTER_BUILD_DIR = build;
+				FLUTTER_FRAMEWORK_DIR = /Users/mbeloded/Documents/workspace/flutter/bin/cache/artifacts/engine/ios;
+				FLUTTER_ROOT = /Users/mbeloded/Documents/workspace/flutter;
+				FLUTTER_TARGET = lib/main.dart;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
