@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,9 +28,21 @@
                     <color key="textColor" red="0.13333333333333333" green="0.58431372549019611" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mba-iE-vek">
+                    <rect key="frame" x="128" y="221" width="119" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ahN-WT-eEM"/>
+                    </constraints>
+                    <state key="normal" title="Open the camera"/>
+                    <connections>
+                        <action selector="openTheCameraAction:" destination="-1" eventType="touchUpInside" id="1Ge-ct-Hjf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Mba-iE-vek" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GVs-kS-VBK"/>
+                <constraint firstItem="Mba-iE-vek" firstAttribute="top" secondItem="zHh-33-QnZ" secondAttribute="bottom" constant="100" id="iGf-pd-XOP"/>
                 <constraint firstItem="zHh-33-QnZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="jbw-Kj-HL5"/>
                 <constraint firstItem="zHh-33-QnZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="uCh-yB-9GY"/>
                 <constraint firstAttribute="trailing" secondItem="zHh-33-QnZ" secondAttribute="trailing" constant="16" id="wuI-qI-oc5"/>

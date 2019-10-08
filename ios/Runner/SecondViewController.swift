@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
         setUpNavBar()
         
     }
+    
     func setUpNavBar(){
         self.navigationItem.title = "IOS component"
         self.navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "back", style: UIBarButtonItemStyle.done, target: self, action: nil)
@@ -41,5 +42,9 @@ class SecondViewController: UIViewController {
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
+    }
+    
+    @IBAction func openTheCameraAction(_ sender: Any) {
+        print("openTheCamera -> Action")
     }
 }
