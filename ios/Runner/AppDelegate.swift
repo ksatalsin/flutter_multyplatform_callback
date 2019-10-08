@@ -13,7 +13,7 @@ import Flutter
             return super.application(application, didFinishLaunchingWithOptions: launchOptions)
         }
         
-        let flutterChannel = FlutterMethodChannel.init(name: "test_activity", binaryMessenger: flutterViewController);
+        let flutterChannel = FlutterMethodChannel.init()//.init(name: "test_activity", binaryMessenger: flutterViewController);
         flutterChannel.setMethodCallHandler { (flutterMethodCall, flutterResult) in
             if flutterMethodCall.method == "startNewActivity" {
                 UIView.animate(withDuration: 0.5, animations: {
